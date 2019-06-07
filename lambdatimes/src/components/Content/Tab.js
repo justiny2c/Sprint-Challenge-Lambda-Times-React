@@ -29,7 +29,7 @@ const Tab = props => {
 const Tabs = styled.div `
   display: flex;
   flex-flow:
-  width: 100%;
+  // width: 100%;
 `
 
 // Make sure you include PropTypes on your props.
