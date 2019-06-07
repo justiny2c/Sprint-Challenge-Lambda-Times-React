@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 const Tab = props => { 
   /* Using your props, determine if the `tab` prop matches the `selectedTab` prop, 
@@ -8,6 +9,8 @@ const Tab = props => {
 
 
   return (
+    <Tabs
+      className = "tabs">
     <div
       className={props.tab === props.selectedTab ? "tab active-tab" : "tab"}
       onClick={() => {
@@ -18,9 +21,16 @@ const Tab = props => {
     >
       {props.tab.toUpperCase()}
     </div>
+    </Tabs>
   );
 
 }
+
+const Tabs = styled.div `
+  display: flex;
+  flex-flow:
+  width: 100%;
+`
 
 // Make sure you include PropTypes on your props.
 
